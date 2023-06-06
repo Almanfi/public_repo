@@ -1,0 +1,13 @@
+{
+	"C_Cpp.default.intelliSenseMode": "macos-clang-x64",
+	"workbench.colorTheme": "Dark Horizon",
+	"background.fullscreen": {
+	
+
+		"image": "https://github.com/Almanfi/public_repo/blob/main/darling-in-the-franxx-zero-two.jpeg",
+		"opacity": 0.91,
+		"size": "cover",
+		"position": "center",
+		"interval": 0
+	}
+}
