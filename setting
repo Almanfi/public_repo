@@ -1,13 +1,137 @@
 {
-	"C_Cpp.default.intelliSenseMode": "macos-clang-x64",
-	"workbench.colorTheme": "Dark Horizon",
-	"background.fullscreen": {
-	
-
-		"image": "https://github.com/Almanfi/public_repo/blob/main/darling-in-the-franxx-zero-two.jpeg",
-		"opacity": 0.91,
-		"size": "cover",
-		"position": "center",
-		"interval": 0
-	}
+    "window.titleBarStyle": "custom",
+    // "terminal.integrated.env.linux": {
+    //     "LD_PRELOAD": null,
+    //     "PATH": "/nfs/homes/maboulkh/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+    // },
+    "files.auoSave": "onFocusChange",
+    "git.autofetch": true,
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "relative",
+        "vim.hlsearch": true,
+        "vim.leader": "<space>",
+        "vim.insertModeKeyBindings": [
+            {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+            },
+            {
+                "before" : ["<alt>", ";"],
+                "commands" : ["cursorEnd"]
+            }
+        ],
+        "vim.normalModeKeyBindings": [
+            
+        ],
+        "vim.normalModeKeyBindingsNonRecursive": [
+            {
+                "before": ["<leader>", "j"],
+                "after": ["y", "y", "p"]
+            },
+            {
+                "before": ["<leader>", "k"],
+                "after": ["y", "y", "P"]
+            },
+            {
+                "before": ["<leader>", "l"],
+                "commands": ["editor.action.indentLines"]
+            },
+            {
+                "before": ["<leader>", "h"],
+                "commands": ["editor.action.outdentLines"]
+            },
+            {
+              "before": ["<leader>", "w"],
+              "commands": ["workbench.action.splitEditor"]
+            },
+            {
+                "before": ["<leader>", "c"],
+                "commands": [
+                    "editor.action.commentLine",
+                ],
+            },
+            {
+                "before": ["<leader>", "v"],
+                "after" : ["V"]
+            },
+            {
+                "before": ["<leader>", "a"],
+                "after" : ["A"]
+            },
+            {
+                "before": ["<leader>", "i"],
+                "after" : ["I"]
+            },
+            {
+                "before": ["<leader>", "o", "o"],
+                "commands": [
+                    "workbench.action.showEditorsInActiveGroup"
+                ]
+            },
+            {
+                "before": ["<leader>", "o", "p"],
+                "commands": [
+                    "workbench.action.quickOpen"
+                ]
+            }
+        ],
+    
+        "vim.visualModeKeyBindings": [
+            {
+                "before": ["<leader>", "c"],
+                "commands": [
+                    "editor.action.commentLine",
+                    "extension.vim_escape"
+                ],
+            },
+            {
+                "before": ["<leader>", "j"],
+                "commands": ["editor.action.copyLinesDownAction"],
+            },
+            {
+                "before": ["<leader>", "k"],
+                "commands": ["editor.action.copyLinesUpAction"],
+            },
+            {
+                "before": ["<leader>", "l"],
+                "commands": ["editor.action.indentLines"]
+            },
+            {
+                "before": ["<leader>", "h"],
+                "commands": ["editor.action.outdentLines"]
+            }
+        ],
+        "vim.insertModeKeyBindingsNonRecursive": [
+            {
+                "before": ["<ctrl>", ";"],
+                "commands": [
+                    "extension.vim_escape",
+                    "A"
+                ],
+            } 
+        ],
+        "codam-norminette-3.command": "/usr/local/bin/norminette",
+        "terminal.external.linuxExec": "gnome-terminal",
+        "terminal.sourceControlRepositoriesKind": "external",
+        "terminal.explorerKind": "external",
+        "background.fullscreen": {
+            "image": "https://raw.githubusercontent.com/Almanfi/public_repo/main/darling-in-the-franxx-zero-two.jpeg",
+            "images": [],
+            "opacity": 0.91,
+            "size": "cover",
+            "position": "center",
+            "interval": 0
+        },
+        "terminal.integrated.defaultProfile.linux":  "bash",
+            "bash": {
+              "path": "/app/bin/host-spawn",
+              "args": ["bash"],
+              "icon": "terminal-bash",
+              "overrideName": true
+            },
+            "files.autoSave": "afterDelay",
+            "workbench.colorTheme": "Dark Horizon",
+            "files.associations": {
+                "*.cpp": "cpp"
+            },
 }
