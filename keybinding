@@ -1,203 +1,117 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-	{
-		"key": "shift+alt+j",
-		"command": "editor.action.copyLinesDownAction",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "shift+alt+down",
-		"command": "-editor.action.copyLinesDownAction",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "shift+alt+k",
-		"command": "editor.action.copyLinesUpAction",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "shift+alt+up",
-		"command": "-editor.action.copyLinesUpAction",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "alt+j",
-		"command": "editor.action.moveLinesDownAction",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "alt+down",
-		"command": "-editor.action.moveLinesDownAction",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "alt+k",
-		"command": "editor.action.moveLinesUpAction",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "alt+up",
-		"command": "-editor.action.moveLinesUpAction",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "ctrl+e",
-		"command": "-workbench.action.quickOpen"
-	},
-	{
-		"key": "ctrl+k",
-		"command": "workbench.action.terminal.clear"
-	},
-	{
-		"key": "ctrl+alt+f",
-		"command": "extension.vim_ctrl+f",
-		"when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
-	},
-	{
-		"key": "ctrl+f",
-		"command": "-extension.vim_ctrl+f",
-		"when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
-	},
-	{
-		"key": "ctrl+alt+[",
-		"command": "extension.vim_ctrl+[",
-		"when": "editorTextFocus && vim.active && vim.use<C-[> && !inDebugRepl"
-	},
-	{
-		"key": "ctrl+[",
-		"command": "-extension.vim_ctrl+[",
-		"when": "editorTextFocus && vim.active && vim.use<C-[> && !inDebugRepl"
-	},
-	{
-		"key": "ctrl+alt+]",
-		"command": "extension.vim_ctrl+]",
-		"when": "editorTextFocus && vim.active && vim.use<C-]> && !inDebugRepl"
-	},
-	{
-		"key": "ctrl+]",
-		"command": "-extension.vim_ctrl+]",
-		"when": "editorTextFocus && vim.active && vim.use<C-]> && !inDebugRepl"
-	},
-	{
-		"key": "ctrl+alt+j",
-		"command": "workbench.action.toggleAuxiliaryBar"
-	},
-	{
-		"key": "ctrl+shift+alt+j",
-		"command": "extension.vim_ctrl+j",
-		"when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
-	},
-	{
-		"key": "ctrl+j",
-		"command": "-extension.vim_ctrl+j",
-		"when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
-	},
-	{
-		"key": "ctrl+shift+alt+c",
-		"command": "extension.vim_ctrl+c",
-		"when": "editorTextFocus && vim.active && vim.overrideCtrlC && vim.use<C-c> && !inDebugRepl"
-	},
-	{
-		"key": "ctrl+c",
-		"command": "-extension.vim_ctrl+c",
-		"when": "editorTextFocus && vim.active && vim.overrideCtrlC && vim.use<C-c> && !inDebugRepl"
-	},
-	{
-		"key": "ctrl+alt+x",
-		"command": "extension.vim_ctrl+x",
-		"when": "editorTextFocus && vim.active && vim.use<C-x> && !inDebugRepl"
-	},
-	{
-		"key": "ctrl+x",
-		"command": "-extension.vim_ctrl+x",
-		"when": "editorTextFocus && vim.active && vim.use<C-x> && !inDebugRepl"
-	},
-	{
-		"key": "ctrl+alt+a",
-		"command": "extension.vim_ctrl+a",
-		"when": "editorTextFocus && vim.active && vim.use<C-a> && !inDebugRepl"
-	},
-	{
-		"key": "ctrl+a",
-		"command": "-extension.vim_ctrl+a",
-		"when": "editorTextFocus && vim.active && vim.use<C-a> && !inDebugRepl"
-	},
-	{
-		"key": "ctrl+alt+d",
-		"command": "extension.vim_ctrl+d",
-		"when": "editorTextFocus && vim.active && vim.use<C-d> && !inDebugRepl"
-	},
-	{
-		"key": "ctrl+d",
-		"command": "-extension.vim_ctrl+d",
-		"when": "editorTextFocus && vim.active && vim.use<C-d> && !inDebugRepl"
-	},
-	{
-		"key": "ctrl+'",
-		"command": "workbench.action.terminal.clear"
-	},
-	{
-		"key": "ctrl+shift+v",
-		"command": "extension.vim_ctrl+v",
-		"when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
-	},
-	{
-		"key": "ctrl+v",
-		"command": "-extension.vim_ctrl+v",
-		"when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
-	},
-	{
-		"key": "alt+]",
-		"command": "-editor.action.inlineSuggest.showNext",
-		"when": "inlineSuggestionVisible && !editorReadonly"
-	},
-	{
-		"key": "alt+[",
-		"command": "-editor.action.inlineSuggest.showPrevious",
-		"when": "inlineSuggestionVisible && !editorReadonly"
-	},
-	{
-		"key": "alt+l",
-		"command": "editor.action.indentLines",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "ctrl+]",
-		"command": "-editor.action.indentLines",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "alt+i",
-		"command": "editor.action.outdentLines",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "ctrl+[",
-		"command": "-editor.action.outdentLines",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "ctrl+alt+g",
-		"command": "extension.vim_ctrl+g",
-		"when": "editorTextFocus && vim.active && vim.use<C-g> && !inDebugRepl"
-	},
-	{
-		"key": "ctrl+g",
-		"command": "-extension.vim_ctrl+g",
-		"when": "editorTextFocus && vim.active && vim.use<C-g> && !inDebugRepl"
-	},
-	{
-		"key": "alt+/",
-		"command": "editor.action.commentLine",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "alt+;",
-		"command": "cursorEnd",
-		"when": "textInputFocus"
-	},
-	{
-		"key": "ctrl+alt+h",
-		"command": "workbench.action.toggleSidebarVisibility"
-	}
+    {
+        "key": "ctrl+shift+alt+q",
+        "command": "extension.vim_ctrl+c",
+        "when": "editorTextFocus && vim.active && vim.overrideCtrlC && vim.use<C-c> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-extension.vim_ctrl+c",
+        "when": "editorTextFocus && vim.active && vim.overrideCtrlC && vim.use<C-c> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+shift+alt+v",
+        "command": "extension.vim_ctrl+v",
+        "when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+shift+alt+x",
+        "command": "extension.vim_ctrl+x",
+        "when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-extension.vim_ctrl+v",
+        "when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "-extension.vim_cmd+alt+up",
+        "when": "editorTextFocus && vim.active && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+]",
+        "command": "-extension.vim_ctrl+]",
+        "when": "editorTextFocus && vim.active && vim.use<C-]> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "-extension.vim_ctrl+[",
+        "when": "editorTextFocus && vim.active && vim.use<C-[> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+shift+x ctrl+shift+alt+x",
+        "command": "extension.vim_ctrl+x",
+        "when": "editorTextFocus && vim.active && vim.use<C-x> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "-extension.vim_ctrl+x",
+        "when": "editorTextFocus && vim.active && vim.use<C-x> && !inDebugRepl"
+    },
+    {
+        "key": "alt+;",
+        "command": "cursorEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+j",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+k",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+'",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+l",
+        "command": "editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+i",
+        "command": "editor.action.indentationToTabs"
+    },
+    {
+        "key": "alt+h",
+        "command": "editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+d ctrl+shift+alt+d",
+        "command": "extension.vim_ctrl+d",
+        "when": "editorTextFocus && vim.active && vim.use<C-d> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-extension.vim_ctrl+d",
+        "when": "editorTextFocus && vim.active && vim.use<C-d> && !inDebugRepl"
+    },
+    {
+        "key": "alt+\\",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    }
 ]
